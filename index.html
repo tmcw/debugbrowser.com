@@ -3,130 +3,129 @@
   <head>
     <title>Enable Web Developer Extensions in Chrome, Safari, iOS, Internet Explorer, Opera, and Firefox</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-    <style>
-      body {
-        font:16px/20px 'Helvetica Neue';
-        margin:20px 20px;
-        color:#111;
-      }
-      h2 {
-        border-top:1px solid #111;
-        padding-top:20px;
-      }
-      h3 {
-        font-weight:normal;
-      }
-      em {
-        background:#ffd;
-        font-style:normal;
-      }
-      a {
-        color:#244E97;
-      }
-
-      a.attrib {
-        display:block;
-        padding:40px 0;
-      }
-    </style>
+    <link rel='stylesheet' type='text/css' href='css/style.css' />
+    <link rel='stylesheet' type='text/css' href='css/site.css' />
   </head>
   <body>
-    <h1>Enable Web Developer Extensions</h1>
-    <p>With web developer extensions, you can debug broken web pages and provide
-    better feedback to web developers.</p>
+    <div class='col3 pad2'>
+        <h2>Enable Web Developer Extensions</h2>
+        <p>With web developer extensions, you can debug broken web pages and provide
+        better feedback to web developers.</p>
 
-    Directions for <a href='#safari'>Safari</a>, <a href='#chrome'>Chrome</a>, <a href='#firefox'>Firefox</a>,
-    <a href='#mobile-safari'>Mobile Safari</a>, <a href='#ie'>Internet Explorer</a>, <a href='#opera'>Opera</a>
+        <h4>Browsers</h4>
+        <ul class='browser-list'>
+            <li><a href='#safari'>Safari</a>
+            <li><a href='#chrome'>Google Chrome</a>
+            <li><a href='#firefox'>Mozilla Firefox</a>
+            <li><a href='#mobile-safari'>Mobile Safari</a>
+            <li><a href='#ie'>Internet Explorer</a>
+            <li><a href='#opera'>Opera</a>
+        </ul>
+        <hr />
+        <h4>More Information</h4>
+        <ul>
+            <li><a href='http://caniuse.com/'>Can I Use</a> (compatibility tables)
+            <li><a href='http://www.quirksmode.org/compatibility.html'>Quirksmode</a> (css &amp; html tables)
+        </ul>
+        <hr />
+        <a class='deemphasize' href='https://github.com/tmcw/enable-web-developer-extensions'>you can fork and improve this site on github</a>
+    </div>
 
+    <div class='col9 pad2 h2break'>
 
-    <h2 id='safari'>Safari</h2>
-    <h4>keybinding: <code>⌘⌥i</code></h4>
+        <h2 id='safari'>Safari</h2>
+        <p><a href='https://www.apple.com/safari/'>home page</a>, <a href='https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/Safari_Developer_Guide/DebuggingYourWebsite/DebuggingYourWebsite.html'>Apple's documentation for using the Web Inspector Panel</a></p>
+        <p>keybinding: <code>⌘⌥i</code></p>
 
-    <h3>Select <em>Preferences</em> in the Safari menu</h3>
-    <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
+        <h3>Select <em>Preferences</em> in the Safari menu</h3>
+        <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
 
-    <h3>Check the <em>Show develop in the menu bar</em> option</h3>
-    <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
+        <h3>Check the <em>Show develop in the menu bar</em> option</h3>
+        <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
 
-    <h3>Click <em>Show Web Inspector</em> in the <em>Develop</em> Menu</h3>
-    <img alt='Click Show Web Inspector in the Develop Menu' src='img/s3.png' />
-
-
-    <h2 id='chrome'><a href='http://www.google.com/chrome/'>Chrome</a></h2>
-    <h4>keybinding: <code>⌘⌥i</code></h4>
-
-    <h3>Click <em>Developer Tools</em> in the wrench menu, tools, and <em>Developer Tools</em></h3>
-    <img alt='Click Developer Tools in the wrench menu, tools, and Developer Tools' src='img/c1.png' />
-
-
-    <h2 id='firefox'><a href='http://www.mozilla.org/en-US/firefox/new/'>Firefox</a></h2>
-    <h4>keybinding: <code>⌘⌥i</code></h4>
-
-    <h3>Download Firebug at <a href='http://getfirebug.com/'>http://getfirebug.com/</a></h3>
-    <img alt='Download Firebug' src='img/f1.png' />
-
-    <h3>Start Firebug at <em>Tools</em> / <em>Firebug</em> / <em>Open Firebug</em></h3>
-    <img alt='Start Firebug at Tools/Firebug/Open Firebug' src='img/f2.png' />
-
-
-    <h2 id='mobile-safari'>iOS 5.0 Mobile Safari (iPhones & iPads)</h2>
-    <h4>for advanced debugging, see <a href='http://people.apache.org/~pmuellr/weinre/docs/latest/'>weinre</a></h4>
-
-    <h3>Touch <em>Settings</em> on the home screen</h3>
-    <img src='img/iphone1.png' width=533 height=295 />
-
-    <h3>Touch <em>Safari</em> on the settings screen</h3>
-    <img src='img/iphone2.png' width=439 height=377 /><br />
-
-    <h3>Touch <em>Advanced</em> on the safari screen</h3>
-    <img src='img/iphone3.png' width=526 height=303 /><br />
-
-    <h3>Toggle <em>debug console</em> to true</h3>
-    <img src='img/iphone4.png' width=462 height=243 />
-
-    <h3>A debug bar will now appear at the top of each webpage in mobile Safari.</h3>
+        <h3>Click <em>Show Web Inspector</em> in the <em>Develop</em> Menu</h3>
+        <img alt='Click Show Web Inspector in the Develop Menu' src='img/s3.png' />
 
 
-    <h2 id='mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones & iPads)</h2>
+        <h2 id='chrome'>Google Chrome</h2>
+        <p><a href='http://www.google.com/chrome/'>home page</a>, <a href='https://developers.google.com/chrome-developer-tools/'>using chrome developer tools documentation</a></p>
+        <p>keybinding: <code>⌘⌥i</code></p>
 
-    <h3>Touch <em>Settings</em> on the home screen</h3>
-    <img src='img/iphone1.png' width=533 height=295 />
+        <h3>Click <em>Developer Tools</em> in the wrench menu, tools, and <em>Developer Tools</em></h3>
+        <img alt='Click Developer Tools in the wrench menu, tools, and Developer Tools' src='img/c1.png' />
 
-    <h3>Touch <em>Safari</em> on the settings screen</h3>
-    <img src='img/iphone2.png' width=439 height=377 /><br />
 
-    <h3>Touch <em>Advanced</em> on the safari screen</h3>
-    <img src='img/iphone3.png' width=526 height=303 /><br />
+        <h2 id='firefox'>Mozilla Firefox</h2>
+        <p><a href='http://www.mozilla.org/en-US/firefox/new/'>home page</a></p>
+        <p>keybinding: <code>⌘⌥i</code></p>
 
-    <h3>Toggle <em>debug console</em> to true</h3>
-    <img src='img/iphone4.png' width=462 height=243 />
+        <h3>Download Firebug at <a href='http://getfirebug.com/'>http://getfirebug.com/</a></h3>
+        <img alt='Download Firebug' src='img/f1.png' />
 
-    <h3>Connect your Device to a Computer</h3>
+        <h3>Start Firebug at <em>Tools</em> / <em>Firebug</em> / <em>Open Firebug</em></h3>
+        <img alt='Start Firebug at Tools/Firebug/Open Firebug' src='img/f2.png' />
 
-    <h3>Select <em>Preferences</em> in the Safari menu</h3>
-    <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
 
-    <h3>Check the <em>Show develop in the menu bar</em> option</h3>
-    <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
+        <h2 id='mobile-safari'>iOS 5.0 Mobile Safari (iPhones & iPads)</h2>
+        <p>for advanced debugging, see <a href='http://people.apache.org/~pmuellr/weinre/docs/latest/'>weinre</a></p>
 
-    <h3>In Safari on a Computer, select Develop, and then the appropriate Device</h3>
+        <h3>Touch <em>Settings</em> on the home screen</h3>
+        <img src='img/iphone1.png' width=533 height=295 />
 
-    <h2 id='ie'>IE</h2>
-    <h4>keybinding: <code>F12</code></h4>
+        <h3>Touch <em>Safari</em> on the settings screen</h3>
+        <img src='img/iphone2.png' width=439 height=377 /><br />
 
-    One option is installing the <a href='http://www.microsoft.com/en-us/download/details.aspx?id=18359'>Internet Explorer Developer Toolbar</a>
-    from Microsoft. <a href='http://getfirebug.com/firebuglite'>Firebug Lite</a>
-    is a decent, open-source option. <a href='http://www.debugbar.com/'>DebugBar</a>
-    is a closed-source option that's slightly more complete than Firebug Lite.
+        <h3>Touch <em>Advanced</em> on the safari screen</h3>
+        <img src='img/iphone3.png' width=526 height=303 /><br />
 
-    <h2 id='opera'>Opera</h2>
-    <h4>keybinding: <code>⌘⌥i</code></h4>
+        <h3>Toggle <em>debug console</em> to true</h3>
+        <img src='img/iphone4.png' width=462 height=243 />
 
-    <h3><em>Tools - Advanced - Opera Dragonfly</em></h3>
-    <img src='img/opera.png' width=640 height=592 />
+        <h3>A debug bar will now appear at the top of each webpage in mobile Safari.</h3>
 
-    <a class='attrib' href='http://macwright.org/'>this bit of knowledge brought to you by macwright.org</a>
-    <a class='attrib' href='https://github.com/tmcw/enable-web-developer-extensions'>you can fork and improve this site on github</a>
+
+        <h2 id='mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones & iPads)</h2>
+
+        <h3>Touch <em>Settings</em> on the home screen</h3>
+        <img src='img/iphone1.png' width=533 height=295 />
+
+        <h3>Touch <em>Safari</em> on the settings screen</h3>
+        <img src='img/iphone2.png' width=439 height=377 /><br />
+
+        <h3>Touch <em>Advanced</em> on the safari screen</h3>
+        <img src='img/iphone3.png' width=526 height=303 /><br />
+
+        <h3>Toggle <em>debug console</em> to true</h3>
+        <img src='img/iphone4.png' width=462 height=243 />
+
+        <h3>Connect your Device to a Computer</h3>
+
+        <h3>Select <em>Preferences</em> in the Safari menu</h3>
+        <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
+
+        <h3>Check the <em>Show develop in the menu bar</em> option</h3>
+        <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
+
+        <h3>In Safari on a Computer, select Develop, and then the appropriate Device</h3>
+
+        <h2 id='ie'>Internet Explorer</h2>
+        <p><a href=http://msdn.microsoft.com/en-us/library/dd565628%28VS.85%29.aspx'>Discovering Internet Explorer Developer Tools</a></p>
+        <p>keybinding: <code>F12</code></p>
+
+        One option is installing the <a href='http://www.microsoft.com/en-us/download/details.aspx?id=18359'>Internet Explorer Developer Toolbar</a>
+        from Microsoft. <a href='http://getfirebug.com/firebuglite'>Firebug Lite</a>
+        is a decent, open-source option. <a href='http://www.debugbar.com/'>DebugBar</a>
+        is a closed-source option that's slightly more complete than Firebug Lite.
+
+        <h2 id='opera'>Opera</h2>
+        <p><a href='http://www.opera.com/'>home page</a></p>
+        <p>keybinding: <code>⌘⌥i</code></p>
+
+        <h3><em>Tools &rarr; Advanced &rarr; Opera Dragonfly</em></h3>
+        <img src='img/opera.png' width=640 height=592 />
+
+    </div>
+
 
 <script type="text/javascript">
   var _gauges = _gauges || [];
