@@ -131,6 +131,18 @@
         <img src='img/opera.png' width=640 height=592 />
     </div>
 
+    <script src='js/bowser.js'></script>
+    <script>
+    window.onload = function() {
+        if (!location.hash) {
+            if (bowser.msie) location.hash = '#ie';
+            if (bowser.firefox) location.hash = '#firefox';
+            if (bowser.chrome) location.hash = '#chrome';
+            if (bowser.safari) location.hash = '#safari';
+            if (bowser.opera) location.hash = '#opera';
+        }
+    }
+    </script>
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {
