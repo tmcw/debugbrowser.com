@@ -13,6 +13,20 @@ a {
     margin-top:20px;
 }
 
+.h2break h2 a {
+    text-decoration:none;
+    color:#000;
+}
+
+.h2break h2 a:after {
+    content:' #';
+    color:#aaa;
+}
+
+.h2break h2 a:hover:after {
+    color:blue;
+}
+
 .h2break h2:first-child {
     margin-top:0;
 }
