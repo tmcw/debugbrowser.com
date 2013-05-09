@@ -7,6 +7,14 @@ a {
   color:#244E97;
 }
 
+.fix {
+    position:fixed;
+}
+
+@media only screen and (max-width:640px) {
+    .fix { position:relative; }
+}
+
 .h2break h2 {
     background:#eef;
     padding:20px;
