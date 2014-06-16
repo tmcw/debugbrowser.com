@@ -3,6 +3,7 @@
   <head>
     <title>Enable Web Developer Extensions in Chrome, Safari, iOS, Internet Explorer, Opera, and Firefox</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta name='description' content='Detailed instructions to enable and use the web developer extension built into your browser.'/>
     <link rel='stylesheet' type='text/css' href='css/style.css' />
     <link rel='stylesheet' type='text/css' href='css/site.css' />
   </head>
@@ -22,6 +23,7 @@
             <li><a href='#ie'><img class='logo' src='logos/ie.png' />Internet Explorer</a>
             <li><a href='#opera'><img class='logo' src='logos/opera.png' />Opera</a>
         </ul>
+
         <hr />
         <h4>More Information</h4>
         <ul>
@@ -29,8 +31,6 @@
             <li><a href='http://www.quirksmode.org/compatibility.html'>Quirksmode</a> (css &amp; html tables)
         </ul>
         <hr />
-        <iframe src="http://ghbtns.com/github-btn.html?user=tmcw&repo=enable-web-developer-extensions&type=fork"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="tmcw">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       <br />
@@ -40,6 +40,7 @@
     <div class='col9 margin3 pad2 h2break'>
 
         <h2 id='safari'><img class='logo' src='logos/safari.png' /><a href='#safari'>Safari</a></h2>
+        <p>Safari includes built-in developer tools - you don't need to install anything to debug issues in the browser.</p>
         <p><a href='https://www.apple.com/safari/'>home page</a>, <a href='https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/Safari_Developer_Guide/DebuggingYourWebsite/DebuggingYourWebsite.html'>Apple's documentation for using the Web Inspector Panel</a></p>
         <p>keybinding: <code>⌘⌥i</code></p>
 
@@ -54,6 +55,7 @@
 
 
         <h2 id='chrome'><img class='logo' src='logos/chrome.png' /><a href='#chrome'>Google Chrome</a></h2>
+        <p>Chrome includes built-in developer tools - you don't need to install anything to debug issues in the browser.</p>
         <p><a href='http://www.google.com/chrome/'>home page</a>, <a href='https://developers.google.com/chrome-developer-tools/'>using chrome developer tools documentation</a></p>
         <p>keybinding: <code>⌘⌥i</code></p>
 
@@ -74,7 +76,7 @@
         <img alt='Start Firebug at Tools/Firebug/Open Firebug' src='img/f2.png' />
 
 
-        <h2 id='mobile-safari'><img class='logo' src='logos/safari.png' /><a href='#mobile-safari'>iOS 5.0 Mobile Safari (iPhones & iPads)</a></h2>
+        <h2 id='mobile-safari'><img class='logo' alt='Safari' src='logos/safari.png' /><a href='#mobile-safari'>iOS 5.0 Mobile Safari (iPhones &amp; iPads)</a></h2>
         <p>for advanced debugging, see <a href='http://people.apache.org/~pmuellr/weinre/docs/latest/'>weinre</a></p>
 
         <h3>Touch <em>Settings</em> on the home screen</h3>
@@ -92,7 +94,9 @@
         <h3>A debug bar will now appear at the top of each webpage in mobile Safari.</h3>
 
 
-        <h2 id='mobile-safari-6'><img class='logo' src='logos/safari.png' /><a href='#mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones & iPads)></a></h2>
+        <h2 id='mobile-safari-6'><img class='logo' alt='Safari' src='logos/safari.png' /><a href='#mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones &amp; iPads)></a></h2>
+        <p>You can debug issues on your new iPhone, but only with a connected
+        computer - the built-in console was replaced in version 6.</p>
 
         <h3>Touch <em>Settings</em> on the home screen</h3>
         <img src='img/iphone1.png' width=533 height=295 />
@@ -116,7 +120,7 @@
 
         <h3>In Safari on a Computer, select Develop, and then the appropriate Device</h3>
 
-        <h2 id='ie'><img class='logo' src='logos/ie.png' /><a href='#ie'>Internet Explorer</a></h2>
+        <h2 id='ie'><img class='logo' src='logos/ie.png' alt='ie' /><a href='#ie'>Internet Explorer</a></h2>
         <p><a href=http://msdn.microsoft.com/en-us/library/dd565628%28VS.85%29.aspx'>Discovering Internet Explorer Developer Tools</a></p>
         <p>keybinding: <code>F12</code></p>
 
@@ -132,19 +136,6 @@
         <h3><em>Tools &rarr; Advanced &rarr; Opera Dragonfly</em></h3>
         <img src='img/opera.png' width=640 height=592 />
     </div>
-
-    <script src='js/bowser.js'></script>
-    <script>
-    window.onload = function() {
-        if (!location.hash) {
-            if (bowser.msie) location.hash = '#ie';
-            if (bowser.firefox) location.hash = '#firefox';
-            if (bowser.chrome) location.hash = '#chrome';
-            if (bowser.safari) location.hash = '#safari';
-            if (bowser.opera) location.hash = '#opera';
-        }
-    }
-    </script>
 <script type="text/javascript">
   var _gauges = _gauges || [];
   (function() {
