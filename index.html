@@ -1,14 +1,517 @@
 <!DOCTYPE html>
-<html>
+<html ⚡>
   <head>
+  <link rel="canonical" href="index.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <title>Enable Web Developer Extensions in Chrome, Safari, iOS, Internet Explorer, Opera, and Firefox</title>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+    <meta name="google-site-verification" content="H-RjsNCOM38FVan3nmGTwBXCPEAhP-WbczZhiuvFqMc" />
     <meta name='description' content='Detailed instructions to enable and use the web developer extension built into your browser.'/>
-    <link rel='shortcut icon' href='favicon.png'>
-    <link rel='stylesheet' type='text/css' href='css/style.css' />
-    <link rel='stylesheet' type='text/css' href='css/site.css' />
+    <link rel='shortcut icon' href='favicon.png' />
+
+
+<style amp-custom>
+/*  Reset ♥
+    http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+  }
+body { line-height:1; }
+ol, ul { list-style:none;  }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing:0; }
+/* remember to define focus styles. Hee Haw */
+:focus { outline:0; }
+
+/* Inline Elements & Typography
+------------------------------------------------------- */
+body,
+input,
+textarea {
+  color:#333;
+  font:15px/1.67 'Open Sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  }
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin:0;
+  font-weight: 700;
+  }
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 15px;
+  margin-bottom:0px;
+  line-height:1em;
+  text-transform: uppercase;
+  }
+
+h2 {
+  font-size:24px;
+  margin-bottom:20px;
+  line-height:1.25em;
+  }
+
+h3 {
+  font-size:20px;
+  margin-bottom:20px;
+  line-height:1.5em;
+  }
+
+h4, h5 {
+  font-size:17px;
+  margin-bottom:0;
+  line-height:1.67em;
+  }
+
+p {
+  margin:0 0 20px;
+  }
+  p:last-child { margin-bottom:0;}
+
+abbr {
+  border-bottom:1px dotted #000;
+  cursor:help;
+  }
+
+address { font-style:italic;}
+small   { font-size:11px;}
+strong  { font-weight:700;}
+em      { font-style:italic;}
+
+hr {
+  margin:0 0 20px;
+  border:0;
+  height:1px;
+  background:#f8f8f8;
+  }
+
+/* Block Quotes */
+blockquote,
+q {
+  quotes:none;
+  font-style:italic;
+  padding-left:20px;
+  margin:10px;
+  }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:'';
+  }
+
+/* Code Blocks & Pre */
+code,
+pre {
+  padding:5px;
+  font-family:Menlo, Bitstream Vera Sans Mono, Monaco, Consolas, monospace;
+  font-size:12px;
+  border-radius:3px;
+  }
+code {
+  padding:5px;
+  background:#f8f8f8;
+  border:1px solid #ddd;
+  }
+pre {
+  display:block;
+  padding:10px;
+  margin-bottom:10px;
+  font-size:12px;
+  word-break:break-all;
+  word-wrap:break-word;
+  white-space:pre;
+  white-space:pre-wrap;
+  background:#f8f8f8;
+  border:1px solid #ddd;
+  border-radius:3px;
+  }
+  pre code {
+    padding:0;
+    color:inherit;
+    background-color:transparent;
+    border:0;
+    }
+.pre-scrollable {
+  max-height:300px;
+  overflow-y:scroll;
+  }
+
+/* sub/superscripts */
+sup,
+sub {
+  height:0;
+  line-height:1;
+  vertical-align:baseline;
+  _vertical-align:bottom;
+  position:relative;
+  font-size:75%;
+  }
+sup {
+  top:.5em;
+  bottom:1em;
+  }
+
+label {
+  display:block;
+  }
+select,
+textarea,
+input[type=text] {
+  display:inline-block;
+  height:30px;
+  width:95%;
+  margin-bottom:10px;
+  font-size:13px;
+  font-weight:500;
+  line-height:20px;
+  color:#a0a0a0;
+  vertical-align:middle;
+  padding:4px 6px;
+  -webkit-border-radius:1px;
+          border-radius:1px;
+  }
+textarea,
+input[type=text] {
+  background-color:#fff;
+  border:1px solid #ccc;
+  -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.1);
+     -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.1);
+          box-shadow:1px 1px 2px rgba(0,0,0,0.1);
+  -webkit-transition:border linear .2s, box-shadow linear .2s;
+     -moz-transition:border linear .2s, box-shadow linear .2s;
+       -o-transition:border linear .2s, box-shadow linear .2s;
+          transition:border linear .2s, box-shadow linear .2s;
+  }
+  textarea:focus,
+  input[type=text]:focus {
+    outline:thin dotted\8; /* ie8 below */
+    color:#404040;
+    border-color:#00395D;
+    border-width:1px;
+    }
+
+textarea {
+  height:200px;
+  max-width:none;
+  }
+input[type=submit] {
+  background-color:#00395D;
+  cursor:pointer;
+  color:#fff;
+  font-weight:bold;
+  text-transform:uppercase;
+  border:none;
+  padding:9px 20px;
+  -webkit-box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+     -moz-box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+          box-shadow:2px 2px 4px rgba(0,0,0,0.1);
+  }
+  input[type=submit]:hover {
+    background-color:#002f4c;
+    }
+  input[type=submit]:active {
+    position:relative;
+    top:1px;
+    }
+
+table {
+  width:100%;
+  background-color:transparent;
+  border-collapse:collapse;
+  border-spacing:0;
+  margin-bottom:20px;
+  table-layout:fixed;
+  }
+  th,
+  td {
+    padding:4px 0;
+    line-height:20px;
+    text-align:left;
+    vertical-align:top;
+    border-bottom:1px solid #d5d5d5;
+    }
+  th {
+    font-weight:bold;
+    }
+  thead th {
+    vertical-align:bottom;
+    color:#57594D;
+    }
+
+/* Read content styling */
+.prose ul {
+  list-style:disc;
+  margin-left:40px;
+  }
+.prose ol {
+  list-style:decimal;
+  }
+.prose p {
+  margin:0 0 10px;
+  }
+
+.icon {
+  background:transparent url(img/sprite.png) no-repeat 0 0;
+  display:block;
+  width:30px;
+  height:30px;
+  text-indent:-999em;
+  }
+
+/* Layout
+------------------------------------------------------- */
+.container {
+  overflow:hidden;
+  }
+
+/* Columns
+------------------------------------------------------- */
+.col0    { float:left; width:04.1666%; }
+.col1    { float:left; width:08.3333%; }
+.col2    { float:left; width:16.6666%; }
+.col3    { float:left; width:25.0000%; }
+.col4    { float:left; width:33.3333%; }
+.col5    { float:left; width:41.6666%; }
+.col6    { float:left; width:50.0000%; }
+.col7    { float:left; width:58.3333%; }
+.col8    { float:left; width:66.6666%; }
+.col9    { float:left; width:75.0000%; }
+.col10   { float:left; width:83.3333%; }
+.col11   { float:left; width:91.6666%; }
+.col12   { width:100%; }
+.margin0  { margin-left:04.1666%; }
+.margin1  { margin-left:08.3333%; }
+.margin2  { margin-left:16.6666%; }
+.margin3  { margin-left:25.0000%; }
+.margin4  { margin-left:33.3333%; }
+.margin5  { margin-left:41.6666%; }
+.margin6  { margin-left:50.0000%; }
+.margin7  { margin-left:58.3333%; }
+.margin8  { margin-left:66.6666%; }
+.margin9  { margin-left:75.0000%; }
+.margin10 { margin-left:83.3333%; }
+.margin11 { margin-left:91.6666%; }
+.margin12 { margin-left:100.0000%; }
+
+/* Padding
+------------------------------------------------------- */
+.pad1    { padding:10px; }
+.pad2    { padding:20px; }
+.pad21h  { padding:10px 20px; }
+.pad2h   { padding:0 20px; }
+.pad4    { padding:40px; }
+.pad4h   { padding-left:40px; padding-right:40px; }
+.pad8    { padding:80px 40px; }
+.pad4c   { padding:40px; }
+
+/* Additional Utility Classes
+------------------------------------------------------- */
+.fr   { float:right; }
+.fl   { float:left; }
+.show { display:block; }
+.hide { display:none; }
+
+.deemphasize  { color:#888; }
+.center       { text-align:center; }
+
+/* Markup free clearing
+Details: http://www.positioniseverything.net/easyclearing.html
+------------------------------------------------------- */
+.clearfix:after {
+  content:'.';
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+  }
+
+.clearfix { display:inline-block; }
+
+/* Tablet Layout
+------------------------------------------------------- */
+@media only screen and (max-width:770px) {
+  .hide-tablet { display:none; }
+  .show-tablet { display:block; }
+  }
+
+/* Mobile Layout
+------------------------------------------------------- */
+@media only screen and (max-width:640px) {
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 { width:100%; max-width:100%; }
+  .margin0,
+  .margin1,
+  .margin2,
+  .margin3,
+  .margin4,
+  .margin5,
+  .margin6,
+  .margin7,
+  .margin8,
+  .margin9,
+  .margin10,
+  .margin11,
+  .margin12 { margin-left:0; }
+  .pad4c { padding:0; }
+  .pad4,
+  .pad4h { padding-left:20px; padding-right:20px; }
+  .pad8 { padding:40px 20px; }
+  .hide-mobile { display:none; }
+  .show-mobile { display:block; }
+  .icon {
+    background-image:url(img/sprite@2x.png);
+    background-size:240px 240px;
+    }
+  }
+
+
+
+
+
+
+
+em {
+  background:#ffd;
+  font-style:normal;
+}
+
+a {
+  color:#244E97;
+}
+
+.fix {
+    position:fixed;
+}
+
+@media only screen and (max-width:640px),
+@media only screen and (max-height:600px) {
+    .fix { position:relative; }
+}
+
+.h2break h2 {
+    background:#eef;
+    padding:20px;
+    margin-top:20px;
+}
+
+.h2break h2 a {
+    text-decoration:none;
+    color:#000;
+}
+
+.h2break h2 a:after {
+    content:' #';
+    color:#aaa;
+}
+
+.h2break h2 a:hover:after {
+    color:blue;
+}
+
+.h2break h2:first-child {
+    margin-top:0;
+}
+
+.browser-list li a {
+    font-size:20px;
+}
+
+.browser-list .logo {
+    width:25px;
+    height:25px;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+img.logo {
+    vertical-align:middle;
+    width:50px;
+    height:50px;
+    margin-right:10px;
+}
+</style>
+
+
+
+
   </head>
   <body>
+
+    <amp-analytics type="googleanalytics" id="analytics1">
+    <script type="application/json">
+    {
+      "vars": {
+	"account": "UA-50598622-1"
+      },
+      "triggers": {
+	"trackPageview": {
+	  "on": "visible",
+	  "request": "pageview"
+	}
+      }
+    }
+    </script>
+    </amp-analytics>
     <div class='col3 pad2 fix'>
         <h2>debugbrowser.com</h2>
 
@@ -17,12 +520,12 @@
 
         <h4>Browsers</h4>
         <ul class='browser-list'>
-            <li><a href='#safari'><img class='logo' src='logos/safari.png' />Safari</a>
-            <li><a href='#chrome'><img class='logo' src='logos/chrome.png' />Google Chrome</a>
-            <li><a href='#firefox'><img class='logo' src='logos/firefox.png' />Mozilla Firefox</a>
-            <li><a href='#mobile-safari'><img class='logo' src='logos/safari.png' />Mobile Safari</a>
-            <li><a href='#ie'><img class='logo' src='logos/ie.png' />Internet Explorer</a>
-            <li><a href='#opera'><img class='logo' src='logos/opera.png' />Opera</a>
+            <li><a href='#safari'><amp-img  class='logo' width=50 height=50 src='logos/safari.png'></amp-img>Safari</a>
+            <li><a href='#chrome'><amp-img   class='logo' width=50 height=50 src='logos/chrome.png'></amp-img>Google Chrome</a>
+            <li><a href='#firefox'><amp-img   class='logo' width=50 height=50 src='logos/firefox.png'></amp-img>Mozilla Firefox</a>
+            <li><a href='#mobile-safari'><amp-img   class='logo' width=50 height=50 src='logos/safari.png'></amp-img>Mobile Safari</a>
+            <li><a href='#ie'><amp-img   class='logo' width=50 height=50 src='logos/ie.png'></amp-img>Internet Explorer</a>
+            <li><a href='#opera'><amp-img   class='logo' width=50 height=50 width=50 height=50 src='logos/opera.png'></amp-img>Opera</a>
         </ul>
 
         <hr />
@@ -32,110 +535,100 @@
             <li><a href='http://www.quirksmode.org/compatibility.html'>Quirksmode</a> (css &amp; html tables)
         </ul>
         <br />
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- debug browser ad -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-6925157701915462"
-             data-ad-slot="2204045030"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <br />
-        <a href='
         <hr />
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="tmcw">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       <br />
     </div>
 
     <div class='col9 margin3 pad2 h2break'>
 
-        <h2 id='safari'><img class='logo' src='logos/safari.png' /><a href='#safari'>Safari</a></h2>
+        <h2 id='safari'><amp-img width=50 height=50   class='logo' src='logos/safari.png'></amp-img><a href='#safari'>Safari</a></h2>
+          
         <p>Safari includes built-in developer tools - you don't need to install anything to debug issues in the browser.</p>
         <p><a href='https://www.apple.com/safari/'>home page</a>, <a href='https://developer.apple.com/library/safari/#documentation/AppleApplications/Conceptual/Safari_Developer_Guide/DebuggingYourWebsite/DebuggingYourWebsite.html'>Apple's documentation for using the Web Inspector Panel</a></p>
         <p>keybinding: <code>⌘⌥i</code></p>
 
         <h3>Select <em>Preferences</em> in the Safari menu</h3>
-        <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
+        <amp-img   alt='Select Preferences in the Safari menu' src='img/s1.png' width=333 height=389 /></amp-img>
 
         <h3>Check the <em>Show develop in the menu bar</em> option</h3>
-        <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
+        <amp-img   alt='Check the Show develop in the menu bar option' src='img/s2.png' width=784 height=439 /></amp-img>
 
         <h3>Click <em>Show Web Inspector</em> in the <em>Develop</em> Menu</h3>
-        <img alt='Click Show Web Inspector in the Develop Menu' src='img/s3.png' />
+        <amp-img   alt='Click Show Web Inspector in the Develop Menu' src='img/s3.png' width=451 height=477 /></amp-img>
 
 
-        <h2 id='chrome'><img class='logo' src='logos/chrome.png' /><a href='#chrome'>Google Chrome</a></h2>
+        <h2 id='chrome'><amp-img   class='logo' width=50 height=50 src='logos/chrome.png' /></amp-img><a href='#chrome'>Google Chrome</a></h2>
         <p>Chrome includes built-in developer tools - you don't need to install anything to debug issues in the browser.</p>
         <p><a href='http://www.google.com/chrome/'>home page</a>, <a href='https://developers.google.com/web/tools/chrome-devtools/'>using chrome developer tools documentation</a></p>
         <p>Apple OS X keybinding: <code>⌘⌥i</code> (<code>Cmd+Option+I</code>)</p>
         <p>Windows keybinding: <code>Ctrl+Shift+I</code></p>
 
         <h3>Click <em>Developer Tools</em> in the wrench menu, tools, and <em>Developer Tools</em></h3>
-        <img alt='Click Developer Tools in the wrench menu, tools, and Developer Tools' src='img/c1.png' />
+        <amp-img   alt='Click Developer Tools in the wrench menu, tools, and Developer Tools' src='img/c1.png' width=609 height=487 /></amp-img>
 
         <p>Once you're in, watch this handy YouTube video on the functionality of the tools.</p>
-        <iframe width="560" height="315" src="//www.youtube-nocookie.com/embed/nOEw9iiopwI?rel=0" frameborder="0" allowfullscreen></iframe>
+        <amp-youtube
+          data-videoid="nOEw9iiopwI"
+          layout="responsive"
+          width="560" height="315"></amp-youtube>
 
-        <h2 id='firefox'><img class='logo' src='logos/firefox.png' /><a href='#firefox'>Mozilla Firefox</a></h2>
+        <h2 id='firefox'><amp-img   class='logo' width=50 height=50 src='logos/firefox.png' /></amp-img><a href='#firefox'>Mozilla Firefox</a></h2>
         <p><a href='http://www.mozilla.org/en-US/firefox/new/'>home page</a>, <a href='https://developer.mozilla.org/en-US/docs/Tools/Tools_Toolbox'>Toolbox documentation</a></p>
         <p>Apple OS X keybinding: <code>⌘⌥i</code> (<code>Cmd+Option+I</code>)</p>
         <p>Windows keybinding: <code>Ctrl-Shift-I</code></p>
 
         <h3>Download Firebug at <a href='http://getfirebug.com/'>http://getfirebug.com/</a></h3>
-        <img alt='Download Firebug' src='img/f1.png' />
+        <amp-img   alt='Download Firebug' src='img/f1.png' width=640 height=189 /></amp-img>
 
         <h3>Start Firebug at <em>Tools</em> / <em>Firebug</em> / <em>Open Firebug</em></h3>
-        <img alt='Start Firebug at Tools/Firebug/Open Firebug' src='img/f2.png' />
+        <amp-img   alt='Start Firebug at Tools/Firebug/Open Firebug' src='img/f2.png' width=793 height=471 /></amp-img>
 
 
-        <h2 id='mobile-safari'><img class='logo' alt='Safari' src='logos/safari.png' /><a href='#mobile-safari'>iOS 5.0 Mobile Safari (iPhones &amp; iPads)</a></h2>
+        <h2 id='mobile-safari'><amp-img   class='logo' alt='Safari' width=50 height=50 src='logos/safari.png' /></amp-img><a href='#mobile-safari'>iOS 5.0 Mobile Safari (iPhones &amp; iPads)</a></h2>
         <p>for advanced debugging, see <a href='http://people.apache.org/~pmuellr/weinre/docs/latest/'>weinre</a></p>
 
         <h3>Touch <em>Settings</em> on the home screen</h3>
-        <img src='img/iphone1.png' width=533 height=295 />
+        <amp-img   src='img/iphone1.png' width=533 height=295 /></amp-img>
 
         <h3>Touch <em>Safari</em> on the settings screen</h3>
-        <img src='img/iphone2.png' width=439 height=377 /><br />
+        <amp-img   src='img/iphone2.png' width=439 height=377 /><br /></amp-img>
 
         <h3>Touch <em>Advanced</em> on the safari screen</h3>
-        <img src='img/iphone3.png' width=526 height=303 /><br />
+        <amp-img   src='img/iphone3.png' width=526 height=303 /><br /></amp-img>
 
         <h3>Toggle <em>debug console</em> to true</h3>
-        <img src='img/iphone4.png' width=462 height=243 />
+        <amp-img   src='img/iphone4.png' width=462 height=243 /></amp-img>
 
         <h3>A debug bar will now appear at the top of each webpage in mobile Safari.</h3>
 
 
-        <h2 id='mobile-safari-6'><img class='logo' alt='Safari' src='logos/safari.png' /><a href='#mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones &amp; iPads)></a></h2>
+        <h2 id='mobile-safari-6'><amp-img   class='logo' alt='Safari' width=50 height=50 src='logos/safari.png' /></amp-img><a href='#mobile-safari-6'>iOS 6.0 Mobile Safari (iPhones &amp; iPads)></a></h2>
         <p>You can debug issues on your new iPhone, but only with a connected
         computer - the built-in console was replaced in version 6.</p>
 
         <h3>Touch <em>Settings</em> on the home screen</h3>
-        <img src='img/iphone1.png' width=533 height=295 />
+        <amp-img   src='img/iphone1.png' width=533 height=295 /></amp-img>
 
         <h3>Touch <em>Safari</em> on the settings screen</h3>
-        <img src='img/iphone2.png' width=439 height=377 /><br />
+        <amp-img   src='img/iphone2.png' width=439 height=377 /><br /></amp-img>
 
         <h3>Touch <em>Advanced</em> on the safari screen</h3>
-        <img src='img/iphone3.png' width=526 height=303 /><br />
+        <amp-img   src='img/iphone3.png' width=526 height=303 /><br /></amp-img>
 
         <h3>Toggle <em>debug console</em> to true</h3>
-        <img src='img/iphone4.png' width=462 height=243 />
+        <amp-img   src='img/iphone4.png' width=462 height=243 /></amp-img>
 
         <h3>Connect your Device to a Computer</h3>
 
         <h3>Select <em>Preferences</em> in the Safari menu</h3>
-        <img alt='Select Preferences in the Safari menu' src='img/s1.png' />
+        <amp-img   alt='Select Preferences in the Safari menu' src='img/s1.png' width=333 height=389 /></amp-img>
 
         <h3>Check the <em>Show develop in the menu bar</em> option</h3>
-        <img alt='Check the Show develop in the menu bar option' src='img/s2.png' />
+        <amp-img   alt='Check the Show develop in the menu bar option' src='img/s2.png' width=784 height=439 /></amp-img>
 
         <h3>In Safari on a Computer, select Develop, and then the appropriate Device</h3>
 
-        <h2 id='ie'><img class='logo' src='logos/ie.png' alt='ie' /><a href='#ie'>Internet Explorer</a></h2>
+        <h2 id='ie'><amp-img   class='logo' width=50 height=50 src='logos/ie.png' alt='ie' /></amp-img><a href='#ie'>Internet Explorer</a></h2>
         <p><a href=http://msdn.microsoft.com/en-us/library/dd565628%28VS.85%29.aspx'>Discovering Internet Explorer Developer Tools</a></p>
         <p>keybinding: <code>F12</code></p>
 
@@ -144,26 +637,12 @@
         is a decent, open-source option. <a href='http://www.debugbar.com/'>DebugBar</a>
         is a closed-source option that's slightly more complete than Firebug Lite.
 
-        <h2 id='opera'><img class='logo' src='logos/opera.png' /><a href='#opera'>Opera</a></h2>
+        <h2 id='opera'><amp-img   class='logo' width=50 height=50 src='logos/opera.png' /></amp-img><a href='#opera'>Opera</a></h2>
         <p><a href='http://www.opera.com/'>home page</a></p>
         <p>keybinding: <code>⌘⌥i</code></p>
 
         <h3><em>Tools &rarr; Advanced &rarr; Opera Dragonfly</em></h3>
-        <img src='img/opera.png' width=640 height=592 />
+        <amp-img   src='img/opera.png' width=640 height=592 /></amp-img>
     </div>
-<script type="text/javascript">
-  var _gauges = _gauges || [];
-  (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '56afe5fe4b2ffa6a3b00226f');
-    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
-    t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-  })();
-</script>
   </body>
 </html>
